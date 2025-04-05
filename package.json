@@ -1,0 +1,14 @@
+{
+  "name": "college-dashboard-monorepo",
+  "version": "1.0.0",
+  "description": "College Dashboard - A comprehensive college management system",
+  "scripts": {
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install"w
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
