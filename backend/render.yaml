@@ -1,9 +1,9 @@
 services:
   - type: web
     name: college-dashboard-api
-    env: node
-    buildCommand: npm install
-    startCommand: node server.js
+    runtime: node
+    buildCommand: npm install && cd backend && npm install
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production

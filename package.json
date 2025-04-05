@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "College Dashboard - A comprehensive college management system",
   "scripts": {
+    "start": "cd backend && npm start",
     "frontend": "cd frontend && npm start",
     "backend": "cd backend && npm run dev",
     "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
